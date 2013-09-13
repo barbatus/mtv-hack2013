@@ -1,0 +1,50 @@
+<head>
+  <title>hack2013</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  {{> page}}
+</body>
+
+<template name="nav">
+	<div class="navbar navbar-inverse">
+		 <div class="navbar-inner">
+    		<div class="container">
+				<ul class="nav">
+				  	<li class="active"><a href="#">Home</a></li>
+				  	<li><a href="#">Link</a></li>
+				</ul>
+				<ul class="nav pull-right">
+				  	<li class="divider-vertical"></li>
+				  	{{loginButtons align="right"}}
+				</ul>
+			</div>
+		</div>
+   </div>
+</template>
+<template name="page">
+  <div class="container">
+    <div class="row">
+      <div class="span1"> </div>
+      <div class="span10">
+        <div class="header row">
+        	{{> nav}}
+        </div>
+ 		<div class="row">
+ 		  <div class="span10">
+          </div>
+ 		</div>
+        <div class="row">
+          <div class="span7">
+          </div>
+          <div class="span3">
+          	{{> trip_buttons}}
+           </div>
+        </div>
+      </div>
+
+      <div class="span1"> </div>
+    </div>
+  </div>
+</template>
